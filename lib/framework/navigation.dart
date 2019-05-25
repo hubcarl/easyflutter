@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 
 class NavigationChannel {
-  static const MethodChannel methodChannel = MethodChannel('com.happy/navigation');
+  static const MethodChannel methodChannel = MethodChannel('com.easy/navigation');
 
   static Future<String> pushRoute(route, [args]) async {
     Map<String, String> map = args == null ? {} : args;
