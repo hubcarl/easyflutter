@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
+import '../framework/webview.dart';
 
 class Home extends StatelessWidget {
 
@@ -10,18 +10,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        body: Center(
-          child: new WebviewScaffold(
-            appBar: this.appBar == false ? null : new AppBar(
-              title: new Text("easy-team"),
-              centerTitle: true,
-            ),
-            url: 'https://www.yuque.com/easy-team',
-            hidden: false,
-            withZoom: false,
-            withLocalStorage: true,
-          ),
-        )
+        body: WebView('easy-team', 'https://www.yuque.com/easy-team', true)
     );
   }
 }
