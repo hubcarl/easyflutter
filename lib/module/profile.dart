@@ -76,10 +76,13 @@ class ProfileState extends State<Profile> {
         builder: (context, snapshot) {
           // if (snapshot.hasError) print(snapshot.error);
           List<Map<String, dynamic>> list = snapshot.data;
-          // print("----favorite count:" + list.length.toString());
+
+          if (list == null) {
+            return Center(child: Text('Empty'));
+          } 
           return ListView.builder(
             shrinkWrap: true,
-            itemCount: list.length,
+            itemCount: list?.length,
             itemBuilder: (_, int position) {
               Map item = list[position];
               return Card(
@@ -92,7 +95,7 @@ class ProfileState extends State<Profile> {
                     });
                   },
                   onLongPress: () {
-                    showDialog(context: context, builder: (_) =>
+                    showDialog(context: _, builder: (_) =>
                         AlertDialog(
                           title: Text("确定删除[${item['title'].toString()}]文章吗?"),
                           actions: <Widget>[
@@ -105,8 +108,7 @@ class ProfileState extends State<Profile> {
                             FlatButton(
                               child: Text('确认'),
                               onPressed: () {
-                                favoriteDB.deleteFavorite(item['id']).then((
-                                    ret) {
+                                favoriteDB.deleteFavorite(item['id']).then((ret) {
                                   String msg = ret > 0 ? "删除成功" : "删除失败";
                                   Scaffold.of(context).showSnackBar(
                                       new SnackBar(content: new Text(msg)));
