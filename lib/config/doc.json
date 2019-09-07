@@ -1,6 +1,18 @@
 {
   "list":[
     {
+      "name": "Eggjs 专栏",
+      "title": "Eggjs 专栏",
+      "description": "",
+      "url": "https://www.yuque.com/egg/nodejs"
+    },
+    {
+      "name": "easy-team 专栏",
+      "title": "easy-team 专栏",
+      "description": "",
+      "url": "https://www.yuque.com/easy-team"
+    },
+    {
       "name": "Flutter",
       "title": "Flutter-移动UI框架",
       "description": "",
@@ -11,6 +23,18 @@
       "title": "Eggjs-企业级 Node.js 框架",
       "description": "",
       "url": "https://eggjs.org/zh-cn/index.html"
+    },
+    {
+      "name": "Next",
+      "title": "Next-React 服务端渲染应用框架",
+      "description": "",
+      "url": "https://nextjs.frontendx.cn/"
+    },
+    {
+      "name": "Nuxt",
+      "title": "Nuxt-Vue服务端渲染应用框架",
+      "description": "",
+      "url": "https://zh.nuxtjs.org/"
     },
     {
       "name": "Webpack",
@@ -49,16 +73,16 @@
       "url": "https://tech.meituan.com/"
     },
     {
+      "name": "前端九部",
+      "title": "前端九部",
+      "description": "",
+      "url": "https://www.yuque.com/fe9"
+    },
+    {
       "name": "基础技术教程",
       "title": "基础技术教程",
       "description": "",
       "url": "http://www.runoob.com"
-    },
-    {
-      "name": "easywebpack 专栏",
-      "title": "easywebpack 专栏",
-      "description": "",
-      "url": "https://zhuanlan.zhihu.com/easywebpack"
     }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "list":[
+    {
+      "name": "easy-team",
+      "title": "[GitHub] easy-team",
+      "description": "",
+      "url": "https://github.com/easy-team"
+    },
+    {
+      "name": "easy-team dashboard",
+      "title": "[GitHub] easy-team dashboard",
+      "description": "",
+      "url": "https://github.com/orgs/easy-team/dashboard"
+    },
+    {
+      "name": "hubcarl",
+      "title": "[GitHub] hubcarl",
+      "description": "",
+      "url": "https://github.com/hubcarl"
+    },
+    {
+      "name": "语雀专栏",
+      "title": "语雀专栏",
+      "description": "",
+      "url": "https://www.yuque.com/"
+    },
+    {
+      "name": "知乎专栏",
+      "title": "知乎专栏",
+      "description": "",
+      "url": "https://zhuanlan.zhihu.com/easywebpack"
+    }
+  ]
+}

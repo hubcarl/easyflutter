@@ -1,8 +1,6 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../framework/webview.dart';
-import '../framework/navigation.dart';
+import '../widget/SiteList.dart';
 
 class GitHub extends StatefulWidget {
 
@@ -60,37 +58,7 @@ class GitHubState extends State<GitHub> {
         centerTitle: true,
       ),
       body: new Center(
-          child: FutureBuilder(
-              future: DefaultAssetBundle.of(context).loadString('lib/config/github.json'),
-              builder: (context, snapshot){
-                var github = jsonDecode(snapshot.data.toString());
-                var list = github['list'];
-                return ListView.builder(
-                    itemCount: list.length,
-                    itemBuilder: (_, int index){
-                      Map item = list[index];
-                      var title = item['title'].toString();
-                      var url = item['url'].toString();
-                      return ListTile(
-                          leading: new Icon(Icons.list),
-                          title: Text(title),
-                          onTap: () {
-                            NavigationChannel.pushWebRoute({"title": title, "url": url }).then((ret){
-                              print("--pushRoute--:" + ret);
-                              if (ret != 'success') {
-                                Navigator.of(context).push(new PageRouteBuilder(pageBuilder:
-                                    (BuildContext context, Animation<double> animation,
-                                    Animation<double> secondaryAnimation) {
-                                  return new WebView(title, url, true);
-                                }));
-                              }
-                            });
-                          }
-                      );
-                    }
-                );
-              }
-          )
+          child: SiteList('lib/config/github.json')
          ),
       );
   }

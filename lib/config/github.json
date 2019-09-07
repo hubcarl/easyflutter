@@ -1,16 +1,10 @@
 {
   "list":[
     {
-      "name": "easy-team",
-      "title": "easy-team",
+      "name": "Koajs",
+      "title": "基于 Node.js 的 Web 开发框架",
       "description": "",
-      "url": "https://github.com/easy-team"
-    },
-    {
-      "name": "Flutter",
-      "title": "Flutter-跨平台移动UI框架",
-      "description": "",
-      "url": "https://github.com/flutter"
+      "url": "https://github.com/koajs"
     },
     {
       "name": "Eggjs",
@@ -19,16 +13,52 @@
       "url": "https://github.com/eggjs"
     },
     {
+      "name": "Next",
+      "title": "Next-React 服务端渲染应用框架",
+      "description": "",
+      "url": "https://github.com/next"
+    },
+    {
+      "name": "Nuxt",
+      "title": "Nuxt-Vue Web Framework",
+      "description": "",
+      "url": "https://github.com/nuxt"
+    },
+    {
+      "name": "Flutter",
+      "title": "Flutter-跨平台移动UI框架",
+      "description": "",
+      "url": "https://github.com/flutter"
+    },
+    {
+      "name": "React",
+      "title": "React-构建用户界面JavaScript库",
+      "description": "",
+      "url": "https://github.com/facebook/react"
+    },
+    {
+      "name": "Vue",
+      "title": "Vue-构建用户界面的渐进式框架",
+      "description": "",
+      "url": "https://github.com/vuejs"
+    },
+    {
+      "name": "Ant Design",
+      "title": "Ant Design-React UI模块化解决方案",
+      "description": "",
+      "url": "https://github.com/ant-design"
+    },
+    {
+      "name": "Element UI",
+      "title": "Element UI-Vue UI模块化解决方案",
+      "description": "",
+      "url": "https://github.com/ElemeFE/element"
+    },
+    {
       "name": "Webpack",
       "title": "Webpack-JavaScript模块打包工具",
       "description": "",
       "url": "https://github.com/webpack"
-    },
-    {
-      "name": "Ant Design",
-      "title": "React-构建用户界面JavaScript库",
-      "description": "",
-      "url": "https://github.com/ant-design"
     }
   ]
 }

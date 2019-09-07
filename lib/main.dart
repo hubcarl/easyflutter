@@ -3,7 +3,7 @@ import 'module/home.dart';
 import 'module/find.dart';
 import 'module/github.dart';
 import 'module/document.dart';
-import 'module/profile.dart';
+import 'module/profile/index.dart';
 import 'module/setting.dart';
 import 'module/about.dart';
 import 'test/pagerlist.dart';
@@ -64,7 +64,7 @@ class _MainAppState extends State<MainApp> {
   final _widgetOptions = [
     Home(),
     GitHub(),
-    Find(),
+    Profile(),
   ];
 
   void _onItemTapped(int index) {
